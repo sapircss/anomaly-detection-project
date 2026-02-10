@@ -6,9 +6,6 @@ using machine learning techniques applied to structured event logs.
 The work includes binary and multiclass classification of attack-related activities,
 as well as attacker profiling based on temporal behavior patterns.
 
-<img width="900" height="607" alt="image" src="https://github.com/user-attachments/assets/2881255f-1085-4ea9-a471-fcb2a5be859e" />
-
-
 ---
 
 ## Notebooks Overview
@@ -43,13 +40,58 @@ Due to size and privacy considerations, the dataset is **not included** in this 
 A virtual environment should be created locally before running the notebooks.
 
 ---
+## How to Run the Project
+
+1. Clone the repository:
+```bash
+git clone https://github.com/sapircss/anomaly-detection-project.git
+cd anomaly-detection-project
+```
+
+3. Create and activate a virtual environment:
+```bash
+python -m venv .venv
+source .venv/bin/activate
+```
+
+5. Install required packages:
+```bash
+pip install -r requirements.txt
+```
+
+7. Place the dataset in the following structure:
+```bash
+data/
+├── raw/
+└── processed/
+```
+
+9. Run the notebooks in order:
+```bash
+01_data_loading.ipynb
+
+02_feature_engineering.ipynb
+
+03_binary_classification.ipynb
+
+04_multiclass_classification.ipynb
+
+attacker_profiling.ipynb
+```
+
+
+---
 
 ## Literature Review
 
-A PDF file containing the literature review used for this project is included:
-- `literature_review.pdf`
-
+A PDF file containing the literature review used for this project is included
 ---
+
+## Summary
+
+The notebooks demonstrate the feasibility of detecting anomalous cloud activities
+and distinguishing between different attack types using supervised learning models.
+
 
 ## Author
 
